@@ -42,6 +42,21 @@ Execute the following command to build the application.
 
 The executable jar will be available at build/lib/frequent-items-all-1.0-SNAPSHOT.jar
 
+# Running the application
+
+Command line arguments
+-i input file
+-s support value
+-a algorithm ("APriori" or "PCY")
+-g generate input file
+-b number of baskets when generating input file
+
+
+example:
+java -jar build/lib/frequent-items-all-1.0-SNAPSHOT.fatJar -i data/input_file.txt -s 2
+
+
+
 # Input file format
 
 Each line should contain a comma delimited list of items as integers.
